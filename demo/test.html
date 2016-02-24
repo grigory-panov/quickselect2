@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<link>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="quickselect.css" rel="stylesheet">
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+
+    <script src="http://igorescobar.github.io/jQuery-Mask-Plugin/js/jquery.mask.min.js"></script>
+    <script src="quickselect2.js"></script>
+
+    <script>
+        $(function(){
+            $('#in_1').mask('0000000');
+            $('#in_2').mask('0000000');
+            $('#in_1').quickselect({data: ['111', '222', '333']});
+            $('#in_2').quickselect({data: ['1111', '2222', '3333']});
+        });
+    </script>
+</head>
+<body>
+<form>
+       <input id="in_1">
+       <input id="in_2">
+    <input type="submit"/>
+</form>
+</body>
+</html>
